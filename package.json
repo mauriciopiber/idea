@@ -1,0 +1,13 @@
+{
+  "author": "Maurício Piber Fão <mauriciopiber@gmail.com>",
+  "description": "Idea is an initiative to create a mechanism to represent how the system of life works.",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "idea",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
