@@ -1,5 +1,5 @@
 import { Command, CommandRunner } from 'nest-commander';
-import { IdeasService } from '../../../services/ideas.service';
+import { IdeasService } from 'src/services/ideas.service';
 import { AddIdeaCommand } from './add.command';
 
 @Command({
