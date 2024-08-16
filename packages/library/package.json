@@ -2,6 +2,7 @@
   "author": "",
   "dependencies": {
     "@piber/eslint-config": "^1.1.0",
+    "dotenv": "^16.4.5",
     "typescript": "^5.5.4"
   },
   "description": "",
@@ -9,11 +10,13 @@
     "@eslint/js": "^9.8.0",
     "@jest/globals": "^29.7.0",
     "@piber/prettier-config": "^0.1.1",
+    "@prisma/client": "^5.18.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jest": "^29.5.12",
     "eslint": "^9.8.0",
     "globals": "^15.9.0",
     "jest": "^29.7.0",
+    "prisma": "^5.18.0",
     "ts-jest": "^29.2.4",
     "typescript-eslint": "^8.0.0"
   },
@@ -26,8 +29,10 @@
     "build": "tsc",
     "check": "tsc --noEmit",
     "format": "prettier . -w",
+    "generate": "npx prisma generate",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
+    "postinstall": "npm run build && npm run generate",
     "test": "jest --coverage",
     "test:e2e": "exit 0",
     "test:watch": "jest --watch"

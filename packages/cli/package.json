@@ -55,6 +55,9 @@
   },
   "license": "UNLICENSED",
   "name": "cli",
+  "peerDependencies": {
+    "@prisma/client": ">=5"
+  },
   "private": true,
   "scripts": {
     "bin": "ts-node -r tsconfig-paths/register src/main.ts",
