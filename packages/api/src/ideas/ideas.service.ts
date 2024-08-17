@@ -8,6 +8,7 @@ export class IdeasService {
   constructor(private prismaClient: PrismaService) {}
 
   create(createIdeaDto: CreateIdeaDto) {
+    createIdeaDto;
     return 'This action adds a new idea';
   }
 
@@ -20,6 +21,7 @@ export class IdeasService {
   }
 
   update(id: number, updateIdeaDto: UpdateIdeaDto) {
+    updateIdeaDto;
     return `This action updates a #${id} idea`;
   }
 

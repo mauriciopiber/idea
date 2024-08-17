@@ -8,10 +8,14 @@
   "private": true,
   "scripts": {
     "postinstall": "npm run postinstall --workspace=@ideas/library",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "version": "1.0.0",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
 }

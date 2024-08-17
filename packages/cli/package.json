@@ -62,6 +62,7 @@
   "scripts": {
     "bin": "ts-node -r tsconfig-paths/register src/main.ts",
     "build": "nest build",
+    "check": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "start": "nest start",
