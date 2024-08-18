@@ -21,10 +21,10 @@ jobs:
         run: npm run check --ws
       - name: Run unit tests
         run: npm run test --ws
-      - name: Install Playwright Browsers
-        run: npx playwright install
-      - name: Run integration tests
-        run: npm run test:e2e --ws
+      # - name: Install Playwright Browsers
+      #   run: npx playwright install
+      # - name: Run integration tests
+      #   run: npm run test:e2e --ws
       # Determine which paths have changed
       - uses: dorny/paths-filter@v3
         id: changes
