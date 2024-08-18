@@ -86,18 +86,49 @@ const ideas = [
   'Trabalhar',
   'Programação',
   'Refletir',
+  'Disciplina',
+  'Organização',
+  'Fé',
+  'Esperança',
+  'Autonomia',
+  'Liberdade',
+  'Espontaneidade',
+  'Rotina',
+  'Substância',
+  'Relacionamentos',
+  'Postura',
+  'Harmonia',
+  'Estética',
+  'Transição',
+  'Adaptação',
+  'Transformação',
+  'Dever',
+  'Conexão',
+  'Instrumentalização',
+  'Motivação',
+  'Intenção',
+  'Amor',
+  'Sintonia',
+  'Ambiente',
+  'Valorização',
+  'Sangue',
+  'Juventude',
+  'Solidez',
 ];
 
 async function main() {
   for (const idea of ideas) {
-    await prisma.ideas.create({
-      data: { idea },
+    await prisma.ideas.upsert({
+      where: { idea: idea },
+      update: { idea: idea },
+      create: { idea },
     });
   }
 }
 
 main()
   .catch((e) => {
+    /* eslint-disable-next-line no-console */
     console.error(e);
     process.exit(1);
   })

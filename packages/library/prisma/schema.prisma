@@ -8,7 +8,16 @@ datasource db {
 }
 
 model ideas {
-  id         Int      @id @unique @default(autoincrement())
+  id         Int      @id @default(autoincrement())
   created_at DateTime @default(now()) @db.Timestamptz(6)
-  idea       String?  @db.VarChar
+  idea       String?  @db.VarChar @unique
+}
+
+
+model slices {
+  id   Int        @id @default(autoincrement())
+  name String? @db.VarChar @unique
+  parent_id Int?
+  parent    slices?  @relation("SliceToParent", fields: [parent_id], references: [id])
+  children  slices[] @relation("SliceToParent")
 }
