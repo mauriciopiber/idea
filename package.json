@@ -1,6 +1,9 @@
 {
   "author": "Maurício Piber Fão <mauriciopiber@gmail.com>",
   "description": "Idea is an initiative to create a mechanism to represent how the system of life works.",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  },
   "keywords": [],
   "license": "ISC",
   "main": "index.js",
@@ -8,14 +11,11 @@
   "private": true,
   "scripts": {
     "postinstall": "npm run postinstall --workspace=@ideas/library",
-    "test": "npm run test --ws",
-    "prepare": "husky install"
+    "prepare": "if [ \"$SKIP_PREPARE\" != \"true\" ]; then husky install; echo 'Running prepare scripts'; fi",
+    "test": "npm run test --ws"
   },
   "version": "1.0.0",
   "workspaces": [
     "packages/*"
-  ],
-  "devDependencies": {
-    "husky": "^8.0.0"
-  }
+  ]
 }
