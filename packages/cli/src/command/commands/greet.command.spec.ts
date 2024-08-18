@@ -1,12 +1,13 @@
 import { TestingModule } from '@nestjs/testing';
 import { CommandTestFactory } from 'nest-commander-testing';
+import { GreetCommand } from './greet.command';
 
 describe('Task Command', () => {
   let commandInstance: TestingModule;
 
   beforeAll(async () => {
     commandInstance = await CommandTestFactory.createTestingCommand({
-      imports: [],
+      imports: [GreetCommand],
     }).compile();
   });
 

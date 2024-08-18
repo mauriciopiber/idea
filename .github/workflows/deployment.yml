@@ -1,0 +1,55 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm install
+      - name: Run linters
+        run: npm run lint --ws
+      - name: Run checks
+        run: npm run check --ws
+      - name: Run unit tests
+        run: npm run test --ws
+      - name: Install Playwright Browsers
+        run: npx playwright install
+      - name: Run integration tests
+        run: npm run test:e2e --ws
+      # Determine which paths have changed
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          base: main
+          filters: |
+            website:
+              - 'packages/website/**'
+              - 'packages/library/**'
+            api:
+              - 'packages/api/**'
+              - 'packages/library/**'
+      # Deploy Website if it has changes
+      - name: Deploy Website
+        if: steps.changes.outputs.website == 'true'
+        uses: ./.github/actions/deploy-production
+        with:
+          vercel_token: ${{ secrets.VERCEL_TOKEN }}
+          vercel_scope_id: ${{ secrets.VERCEL_SCOPE_ID }}
+          vercel_project_id: ${{ secrets.VERCEL_WEBSITE_ID }}
+      # Deploy API if it has changes
+      - name: Deploy API
+        if: steps.changes.outputs.api == 'true'
+        uses: ./.github/actions/deploy-production
+        with:
+          vercel_token: ${{ secrets.VERCEL_TOKEN }}
+          vercel_scope_id: ${{ secrets.VERCEL_SCOPE_ID }}
+          vercel_project_id: ${{ secrets.VERCEL_API_ID }}

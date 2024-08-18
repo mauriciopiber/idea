@@ -1,0 +1,31 @@
+name: "Deploy to Production"
+description: "Deploy to Production"
+inputs:
+  vercel_token:
+    description: "Vercel API Token"
+    required: true
+  vercel_scope_id:
+    description: "Vercel Scope ID"
+    required: true
+  vercel_project_id:
+    description: "Vercel Project ID"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install Vercel CLI
+      run: npm install --global vercel@35.2.3
+      shell: bash
+    - name: Link Vercel Project
+      run: vercel link --scope=${{ inputs.vercel_scope_id }} --token="${{ inputs.vercel_token }}" --project=${{ inputs.vercel_project_id }} --yes
+      shell: bash
+    - name: Pull Vercel Environment Configuration
+      run: vercel pull --yes --environment=production --scope=${{ inputs.vercel_scope_id }} --token="${{ inputs.vercel_token }}"
+      shell: bash
+    - name: Build Project
+      run: vercel build --prod --scope=${{ inputs.vercel_scope_id }} --token="${{ inputs.vercel_token }}"
+      shell: bash
+    - name: Deploy Project
+      run: vercel deploy --prebuilt --prod --scope=${{ inputs.vercel_scope_id }} --token="${{ inputs.vercel_token }}"
+      shell: bash

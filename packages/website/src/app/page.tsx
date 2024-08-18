@@ -1,3 +1,4 @@
+import Idea from "../components/ideas/idea";
 import { getIdeas } from "../lib/idea";
 
 export default async function Home() {
@@ -9,11 +10,7 @@ export default async function Home() {
           <h1 className="text-5xl text-center">Ideas</h1>
           <div className="flex flex-wrap">
             {ideas.map((idea) => {
-              return (
-                <p key={idea.id} className="text-center p-2">
-                  {idea.idea}
-                </p>
-              );
+              return <Idea key={idea.id} idea={idea.idea} />;
             })}
           </div>
         </div>
