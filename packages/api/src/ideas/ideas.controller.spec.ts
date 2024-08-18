@@ -1,5 +1,5 @@
+import { PrismaService } from '@ideas/library';
 import { Test, TestingModule } from '@nestjs/testing';
-import { PrismaService } from '../prisma/prisma.service';
 import { IdeasController } from './ideas.controller';
 import { IdeasService } from './ideas.service';
 
