@@ -1,5 +1,5 @@
+import { PrismaModule } from '@ideas/library';
 import { Module } from '@nestjs/common';
-import { PrismaModule } from '../prisma/prisma.module';
 import { IdeasService } from './../services/ideas.service';
 import { GreetCommand } from './commands/greet.command';
 import { AddIdeaCommand } from './commands/ideas/add.command';

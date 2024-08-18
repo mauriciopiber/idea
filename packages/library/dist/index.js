@@ -31,6 +31,8 @@ const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 __exportStar(require("@prisma/client"), exports);
 __exportStar(require("./functions/utils"), exports);
+__exportStar(require("./prisma/prisma.module"), exports);
+__exportStar(require("./prisma/prisma.service"), exports);
 function Library() {
     return 'NPM Library';
 }
