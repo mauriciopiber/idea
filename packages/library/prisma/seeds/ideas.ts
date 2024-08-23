@@ -114,6 +114,7 @@ const ideas = [
   'Sangue',
   'Juventude',
   'Solidez',
+  'Senso',
 ];
 
 async function main() {
