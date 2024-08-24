@@ -1,5 +1,5 @@
+import { ConceptsService } from '@ideas/library';
 import { Command, CommandRunner } from 'nest-commander';
-import { IdeasService } from 'src/services/ideas.service';
 import { AddIdeaCommand } from './add.command';
 
 @Command({
@@ -9,12 +9,12 @@ import { AddIdeaCommand } from './add.command';
   subCommands: [AddIdeaCommand],
 })
 export class IdeaCommand extends CommandRunner {
-  constructor(private ideasService: IdeasService) {
+  constructor(private conceptsService: ConceptsService) {
     super();
   }
 
   async run(): Promise<void> {
-    const ideas = await this.ideasService.findAll();
+    const ideas = await this.conceptsService.findAll();
     console.log(ideas);
 
     return;

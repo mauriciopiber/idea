@@ -7,17 +7,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ideas {
+model concepts {
   id         Int      @id @default(autoincrement())
-  created_at DateTime @default(now()) @db.Timestamptz(6)
-  idea       String?  @db.VarChar @unique
+  createdAt  DateTime @default(now()) @db.Timestamptz(6)
+  idea       String?  @db.VarChar(255) @unique
+  layerId    Int?     @db.Integer
+  layer      layers?   @relation(fields: [layerId], references: [id])
 }
 
-
-model slices {
-  id   Int        @id @default(autoincrement())
-  name String? @db.VarChar @unique
-  parent_id Int?
-  parent    slices?  @relation("SliceToParent", fields: [parent_id], references: [id])
-  children  slices[] @relation("SliceToParent")
+model layers {
+  id       Int       @id @default(autoincrement())
+  name     String?   @db.VarChar(255) @unique
+  concepts concepts[]
 }

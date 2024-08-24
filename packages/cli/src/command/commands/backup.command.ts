@@ -1,7 +1,7 @@
+import { ConceptsService } from '@ideas/library';
 import * as appRoot from 'app-root-path';
 import { Command, CommandRunner } from 'nest-commander';
 import { writeFileSync } from 'node:fs';
-import { IdeasService } from '../../services/ideas.service';
 
 @Command({
   name: 'backup',
@@ -9,14 +9,14 @@ import { IdeasService } from '../../services/ideas.service';
   options: { isDefault: false },
 })
 export class BackupCommand extends CommandRunner {
-  constructor(private ideasService: IdeasService) {
+  constructor(private conceptsService: ConceptsService) {
     super();
   }
 
   async run(): Promise<void> {
-    const ideas = await this.ideasService.findAll();
+    const ideas = await this.conceptsService.findAll();
 
-    const ideasFilePath = `${appRoot.path}/packages/library/prisma/data/ideas.json`;
+    const ideasFilePath = `${appRoot.path}/packages/library/prisma/data/concepts.json`;
 
     writeFileSync(
       ideasFilePath,

@@ -1,6 +1,5 @@
-import { PrismaModule } from '@ideas/library';
+import { ConceptsService, PrismaModule } from '@ideas/library';
 import { Module } from '@nestjs/common';
-import { IdeasService } from './../services/ideas.service';
 import { BackupCommand } from './commands/backup.command';
 import { GreetCommand } from './commands/greet.command';
 import { AddIdeaCommand } from './commands/ideas/add.command';
@@ -14,7 +13,7 @@ import { LibraryCommand } from './commands/library.command';
     AddIdeaCommand,
     BackupCommand,
     IdeaCommand,
-    IdeasService,
+    ConceptsService,
     LibraryCommand,
   ],
 })
