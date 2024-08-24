@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/client';
-import consola from 'consola';
 import { readFileSync } from 'fs';
 import path from 'path';
 
@@ -10,8 +9,6 @@ const ideasFile = readFileSync(
   'utf8',
 );
 const ideas = JSON.parse(ideasFile);
-
-consola.log(ideas);
 
 async function main() {
   for (const idea of ideas) {

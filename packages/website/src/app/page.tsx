@@ -1,10 +1,12 @@
-import Idea from "../components/ideas/idea";
-import { getIdeas } from "../lib/idea";
+import Idea from '../components/ideas/idea';
+import Navbar from '../components/layout/navbar/navbar';
+import { getIdeas } from '../lib/idea';
 
 export default async function Home() {
   const ideas = (await getIdeas()) as { id: number; idea: string }[];
   return (
     <main className="min-h-screen">
+      <Navbar />
       <div className="max-w-5xl mx-auto p-4 md:p-20">
         <div className="flex flex-col gap-8">
           <h1 className="text-5xl text-center">Ideas</h1>
