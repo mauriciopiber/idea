@@ -8,6 +8,7 @@ export class IdeasService {
   constructor(private prismaClient: PrismaService) {}
 
   create(createIdeaDto: CreateIdeaDto) {
+    /* eslint-disable-next-line */
     createIdeaDto;
     return 'This action adds a new idea';
   }
@@ -21,6 +22,7 @@ export class IdeasService {
   }
 
   update(id: number, updateIdeaDto: UpdateIdeaDto) {
+    /* eslint-disable-next-line */
     updateIdeaDto;
     return `This action updates a #${id} idea`;
   }
