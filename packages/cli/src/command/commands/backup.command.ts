@@ -21,22 +21,14 @@ export class BackupCommand extends CommandRunner {
 
     writeFileSync(
       `${appRoot.path}/packages/library/prisma/data/concepts.json`,
-      JSON.stringify(
-        concepts.map((idea) => idea.idea),
-        null,
-        2,
-      ),
+      JSON.stringify(concepts, null, 2),
     );
 
     const layers = await this.layersService.findAll();
 
     writeFileSync(
       `${appRoot.path}/packages/library/prisma/data/layers.json`,
-      JSON.stringify(
-        layers.map((layer) => layer.name),
-        null,
-        2,
-      ),
+      JSON.stringify(layers, null, 2),
     );
 
     console.log(`Backup Database`);

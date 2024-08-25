@@ -1,126 +1,1292 @@
 [
-  "Integridade",
-  "Dignidade",
-  "Unidade",
-  "Moderação",
-  "Força",
-  "KI",
-  "Abundância",
-  "Positivo",
-  "Realização",
-  "Intuição",
-  "Cognição",
-  "Atenção",
-  "Responsabilidade",
-  "Realidade",
-  "Edificar",
-  "Movimento",
-  "Agilidade",
-  "Terra",
-  "Luz",
-  "Efetividade",
-  "Concentração",
-  "Discernimento",
-  "Diálogo",
-  "1=1",
-  "Pedagogia",
-  "Justiça",
-  "Resiliência",
-  "Direção",
-  "Trabalho",
-  "Conciliação",
-  "Switch",
-  "Absoluto",
-  "Sagrado",
-  "Alegria",
-  "Certeza",
-  "Certo",
-  "Verdade",
-  "Espiritual",
-  "Sincronia",
-  "Vitalidade",
-  "Ritmo",
-  "Cores",
-  "Alma",
-  "Decisões",
-  "Âmago",
-  "Moral",
-  "Lei",
-  "Ânimo",
-  "Essência",
-  "Coração",
-  "Mediato",
-  "Estima",
-  "Desejo",
-  "Inconsciência",
-  "Consciência",
-  "Pensamento",
-  "Clareza",
-  "Iluminação",
-  "Inspiração",
-  "Ação",
-  "Emoção",
-  "Estado",
-  "Momento",
-  "Inclinação",
-  "Sensação",
-  "Agora",
-  "Imediato",
-  "Mundo",
-  "Saúde",
-  "Corpo",
-  "Carisma",
-  "Inteligência",
-  "Dinheiro",
-  "Oportunidades",
-  "Amizade",
-  "Independência",
-  "Treino",
-  "Programação",
-  "Refletir",
-  "Disciplina",
-  "Organização",
-  "Fé",
-  "Esperança",
-  "Autonomia",
-  "Liberdade",
-  "Espontaneidade",
-  "Celestial",
-  "Trabalhar",
-  "Rotina",
-  "Substância",
-  "Relacionamentos",
-  "Postura",
-  "Harmonia",
-  "Estética",
-  "Transição",
-  "Adaptação",
-  "Transformação",
-  "Dever",
-  "Conexão",
-  "Instrumentalização",
-  "Motivação",
-  "Intenção",
-  "Amor",
-  "Sintonia",
-  "Ambiente",
-  "Valorização",
-  "Sangue",
-  "Juventude",
-  "Solidez",
-  "Senso",
-  "Troca",
-  "Nutrição",
-  "Superar",
-  "Fluxo",
-  "Respiração",
-  "Ouro",
-  "Pureza",
-  "União",
-  "Reciprocidade",
-  "Prumo",
-  "Laços",
-  "Material",
-  "Retidão",
-  "Idea"
+  {
+    "id": 3,
+    "createdAt": "2024-08-24T22:53:36.822Z",
+    "idea": "Unidade",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 6,
+    "createdAt": "2024-08-24T22:53:36.892Z",
+    "idea": "KI",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 1,
+    "createdAt": "2024-08-24T22:53:36.751Z",
+    "idea": "Integridade",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 4,
+    "createdAt": "2024-08-24T22:53:36.844Z",
+    "idea": "Moderação",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 2,
+    "createdAt": "2024-08-24T22:53:36.797Z",
+    "idea": "Dignidade",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 5,
+    "createdAt": "2024-08-24T22:53:36.869Z",
+    "idea": "Força",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 10,
+    "createdAt": "2024-08-24T22:53:36.989Z",
+    "idea": "Intuição",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 7,
+    "createdAt": "2024-08-24T22:53:36.916Z",
+    "idea": "Abundância",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 9,
+    "createdAt": "2024-08-24T22:53:36.964Z",
+    "idea": "Realização",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 8,
+    "createdAt": "2024-08-24T22:53:36.939Z",
+    "idea": "Positivo",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 11,
+    "createdAt": "2024-08-24T22:53:37.013Z",
+    "idea": "Cognição",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 13,
+    "createdAt": "2024-08-24T22:53:37.059Z",
+    "idea": "Responsabilidade",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 14,
+    "createdAt": "2024-08-24T22:53:37.082Z",
+    "idea": "Realidade",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 12,
+    "createdAt": "2024-08-24T22:53:37.037Z",
+    "idea": "Atenção",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 15,
+    "createdAt": "2024-08-24T22:53:37.104Z",
+    "idea": "Edificar",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 16,
+    "createdAt": "2024-08-24T22:53:37.127Z",
+    "idea": "Movimento",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 17,
+    "createdAt": "2024-08-24T22:53:37.152Z",
+    "idea": "Agilidade",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 18,
+    "createdAt": "2024-08-24T22:53:37.177Z",
+    "idea": "Terra",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 19,
+    "createdAt": "2024-08-24T22:53:37.199Z",
+    "idea": "Luz",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 20,
+    "createdAt": "2024-08-24T22:53:37.222Z",
+    "idea": "Efetividade",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 21,
+    "createdAt": "2024-08-24T22:53:37.245Z",
+    "idea": "Concentração",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 22,
+    "createdAt": "2024-08-24T22:53:37.270Z",
+    "idea": "Discernimento",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 24,
+    "createdAt": "2024-08-24T22:53:37.316Z",
+    "idea": "1=1",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 23,
+    "createdAt": "2024-08-24T22:53:37.294Z",
+    "idea": "Diálogo",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 26,
+    "createdAt": "2024-08-24T22:53:37.363Z",
+    "idea": "Justiça",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 27,
+    "createdAt": "2024-08-24T22:53:37.386Z",
+    "idea": "Resiliência",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 25,
+    "createdAt": "2024-08-24T22:53:37.340Z",
+    "idea": "Pedagogia",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 28,
+    "createdAt": "2024-08-24T22:53:37.409Z",
+    "idea": "Direção",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 30,
+    "createdAt": "2024-08-24T22:53:37.457Z",
+    "idea": "Conciliação",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 29,
+    "createdAt": "2024-08-24T22:53:37.433Z",
+    "idea": "Trabalho",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 31,
+    "createdAt": "2024-08-24T22:53:37.482Z",
+    "idea": "Switch",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 32,
+    "createdAt": "2024-08-24T22:53:37.506Z",
+    "idea": "Absoluto",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 34,
+    "createdAt": "2024-08-24T22:53:37.554Z",
+    "idea": "Alegria",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 33,
+    "createdAt": "2024-08-24T22:53:37.530Z",
+    "idea": "Sagrado",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 35,
+    "createdAt": "2024-08-24T22:53:37.579Z",
+    "idea": "Certeza",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 37,
+    "createdAt": "2024-08-24T22:53:37.625Z",
+    "idea": "Verdade",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 36,
+    "createdAt": "2024-08-24T22:53:37.601Z",
+    "idea": "Certo",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 42,
+    "createdAt": "2024-08-24T22:53:37.740Z",
+    "idea": "Cores",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 38,
+    "createdAt": "2024-08-24T22:53:37.645Z",
+    "idea": "Espiritual",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 39,
+    "createdAt": "2024-08-24T22:53:37.670Z",
+    "idea": "Sincronia",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 40,
+    "createdAt": "2024-08-24T22:53:37.693Z",
+    "idea": "Vitalidade",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 41,
+    "createdAt": "2024-08-24T22:53:37.718Z",
+    "idea": "Ritmo",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 44,
+    "createdAt": "2024-08-24T22:53:37.787Z",
+    "idea": "Decisões",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 43,
+    "createdAt": "2024-08-24T22:53:37.765Z",
+    "idea": "Alma",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 45,
+    "createdAt": "2024-08-24T22:53:37.808Z",
+    "idea": "Âmago",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 46,
+    "createdAt": "2024-08-24T22:53:37.831Z",
+    "idea": "Moral",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 48,
+    "createdAt": "2024-08-24T22:53:37.880Z",
+    "idea": "Ânimo",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 47,
+    "createdAt": "2024-08-24T22:53:37.855Z",
+    "idea": "Lei",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 51,
+    "createdAt": "2024-08-24T22:53:37.951Z",
+    "idea": "Mediato",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 49,
+    "createdAt": "2024-08-24T22:53:37.902Z",
+    "idea": "Essência",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 50,
+    "createdAt": "2024-08-24T22:53:37.927Z",
+    "idea": "Coração",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 52,
+    "createdAt": "2024-08-24T22:53:37.975Z",
+    "idea": "Estima",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 53,
+    "createdAt": "2024-08-24T22:53:37.996Z",
+    "idea": "Desejo",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 55,
+    "createdAt": "2024-08-24T22:53:38.042Z",
+    "idea": "Consciência",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 54,
+    "createdAt": "2024-08-24T22:53:38.019Z",
+    "idea": "Inconsciência",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 56,
+    "createdAt": "2024-08-24T22:53:38.066Z",
+    "idea": "Pensamento",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 57,
+    "createdAt": "2024-08-24T22:53:38.090Z",
+    "idea": "Clareza",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 58,
+    "createdAt": "2024-08-24T22:53:38.112Z",
+    "idea": "Iluminação",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 59,
+    "createdAt": "2024-08-24T22:53:38.134Z",
+    "idea": "Inspiração",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 60,
+    "createdAt": "2024-08-24T22:53:38.158Z",
+    "idea": "Ação",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 126,
+    "createdAt": "2024-08-25T14:19:52.651Z",
+    "idea": "Temperamento",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 127,
+    "createdAt": "2024-08-25T15:16:47.254Z",
+    "idea": "Manifestar",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 61,
+    "createdAt": "2024-08-24T22:53:38.183Z",
+    "idea": "Emoção",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 62,
+    "createdAt": "2024-08-24T22:53:38.207Z",
+    "idea": "Estado",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 63,
+    "createdAt": "2024-08-24T22:53:38.230Z",
+    "idea": "Momento",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 64,
+    "createdAt": "2024-08-24T22:53:38.254Z",
+    "idea": "Inclinação",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 65,
+    "createdAt": "2024-08-24T22:53:38.279Z",
+    "idea": "Sensação",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 66,
+    "createdAt": "2024-08-24T22:53:38.303Z",
+    "idea": "Agora",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 67,
+    "createdAt": "2024-08-24T22:53:38.325Z",
+    "idea": "Imediato",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 69,
+    "createdAt": "2024-08-24T22:53:38.370Z",
+    "idea": "Saúde",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 68,
+    "createdAt": "2024-08-24T22:53:38.347Z",
+    "idea": "Mundo",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 70,
+    "createdAt": "2024-08-24T22:53:38.394Z",
+    "idea": "Corpo",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 71,
+    "createdAt": "2024-08-24T22:53:38.417Z",
+    "idea": "Carisma",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 72,
+    "createdAt": "2024-08-24T22:53:38.441Z",
+    "idea": "Inteligência",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 73,
+    "createdAt": "2024-08-24T22:53:38.465Z",
+    "idea": "Dinheiro",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 75,
+    "createdAt": "2024-08-24T22:53:38.512Z",
+    "idea": "Amizade",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 74,
+    "createdAt": "2024-08-24T22:53:38.490Z",
+    "idea": "Oportunidades",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 76,
+    "createdAt": "2024-08-24T22:53:38.536Z",
+    "idea": "Independência",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 77,
+    "createdAt": "2024-08-24T22:53:38.560Z",
+    "idea": "Treino",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 78,
+    "createdAt": "2024-08-24T22:53:38.584Z",
+    "idea": "Programação",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 79,
+    "createdAt": "2024-08-24T22:53:38.606Z",
+    "idea": "Refletir",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 80,
+    "createdAt": "2024-08-24T22:53:38.630Z",
+    "idea": "Disciplina",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 81,
+    "createdAt": "2024-08-24T22:53:38.652Z",
+    "idea": "Organização",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 82,
+    "createdAt": "2024-08-24T22:53:38.676Z",
+    "idea": "Fé",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 83,
+    "createdAt": "2024-08-24T22:53:38.700Z",
+    "idea": "Esperança",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 84,
+    "createdAt": "2024-08-24T22:53:38.724Z",
+    "idea": "Autonomia",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 87,
+    "createdAt": "2024-08-24T22:53:38.793Z",
+    "idea": "Celestial",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 85,
+    "createdAt": "2024-08-24T22:53:38.747Z",
+    "idea": "Liberdade",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 86,
+    "createdAt": "2024-08-24T22:53:38.771Z",
+    "idea": "Espontaneidade",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 88,
+    "createdAt": "2024-08-24T22:53:38.815Z",
+    "idea": "Trabalhar",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 89,
+    "createdAt": "2024-08-24T22:53:38.840Z",
+    "idea": "Rotina",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 90,
+    "createdAt": "2024-08-24T22:53:38.863Z",
+    "idea": "Substância",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 91,
+    "createdAt": "2024-08-24T22:53:38.886Z",
+    "idea": "Relacionamentos",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 92,
+    "createdAt": "2024-08-24T22:53:38.909Z",
+    "idea": "Postura",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 93,
+    "createdAt": "2024-08-24T22:53:38.933Z",
+    "idea": "Harmonia",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 94,
+    "createdAt": "2024-08-24T22:53:38.956Z",
+    "idea": "Estética",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 95,
+    "createdAt": "2024-08-24T22:53:38.981Z",
+    "idea": "Transição",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 96,
+    "createdAt": "2024-08-24T22:53:39.005Z",
+    "idea": "Adaptação",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 97,
+    "createdAt": "2024-08-24T22:53:39.029Z",
+    "idea": "Transformação",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 98,
+    "createdAt": "2024-08-24T22:53:39.052Z",
+    "idea": "Dever",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 100,
+    "createdAt": "2024-08-24T22:53:39.099Z",
+    "idea": "Instrumentalização",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 101,
+    "createdAt": "2024-08-24T22:53:39.124Z",
+    "idea": "Motivação",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 99,
+    "createdAt": "2024-08-24T22:53:39.075Z",
+    "idea": "Conexão",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 102,
+    "createdAt": "2024-08-24T22:53:39.146Z",
+    "idea": "Intenção",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 103,
+    "createdAt": "2024-08-24T22:53:39.170Z",
+    "idea": "Amor",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 104,
+    "createdAt": "2024-08-24T22:53:39.192Z",
+    "idea": "Sintonia",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 105,
+    "createdAt": "2024-08-24T22:53:39.217Z",
+    "idea": "Ambiente",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 106,
+    "createdAt": "2024-08-24T22:53:39.241Z",
+    "idea": "Valorização",
+    "layerId": 2,
+    "layer": {
+      "id": 2,
+      "name": "Base"
+    }
+  },
+  {
+    "id": 107,
+    "createdAt": "2024-08-24T22:53:39.265Z",
+    "idea": "Sangue",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 108,
+    "createdAt": "2024-08-24T22:53:39.290Z",
+    "idea": "Juventude",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 109,
+    "createdAt": "2024-08-24T22:53:39.314Z",
+    "idea": "Solidez",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 111,
+    "createdAt": "2024-08-24T22:53:39.362Z",
+    "idea": "Troca",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 112,
+    "createdAt": "2024-08-24T22:53:39.386Z",
+    "idea": "Nutrição",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 113,
+    "createdAt": "2024-08-24T22:53:39.411Z",
+    "idea": "Superar",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 114,
+    "createdAt": "2024-08-24T22:53:39.434Z",
+    "idea": "Fluxo",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 116,
+    "createdAt": "2024-08-24T22:53:39.480Z",
+    "idea": "Ouro",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 117,
+    "createdAt": "2024-08-24T22:53:39.504Z",
+    "idea": "Pureza",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 118,
+    "createdAt": "2024-08-24T22:53:39.527Z",
+    "idea": "União",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 119,
+    "createdAt": "2024-08-24T22:53:39.550Z",
+    "idea": "Reciprocidade",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 120,
+    "createdAt": "2024-08-24T22:53:39.573Z",
+    "idea": "Prumo",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 124,
+    "createdAt": "2024-08-24T22:53:39.666Z",
+    "idea": "Idea",
+    "layerId": 1,
+    "layer": {
+      "id": 1,
+      "name": "Universal"
+    }
+  },
+  {
+    "id": 122,
+    "createdAt": "2024-08-24T22:53:39.617Z",
+    "idea": "Material",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 123,
+    "createdAt": "2024-08-24T22:53:39.641Z",
+    "idea": "Retidão",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 125,
+    "createdAt": "2024-08-25T12:33:04.721Z",
+    "idea": "Compromisso",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 110,
+    "createdAt": "2024-08-24T22:53:39.337Z",
+    "idea": "Senso",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 115,
+    "createdAt": "2024-08-24T22:53:39.458Z",
+    "idea": "Respiração",
+    "layerId": 3,
+    "layer": {
+      "id": 3,
+      "name": "Agora"
+    }
+  },
+  {
+    "id": 121,
+    "createdAt": "2024-08-24T22:53:39.594Z",
+    "idea": "Laços",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 128,
+    "createdAt": "2024-08-25T16:40:10.539Z",
+    "idea": "Musculação",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  },
+  {
+    "id": 129,
+    "createdAt": "2024-08-25T16:40:24.749Z",
+    "idea": "Calistenia",
+    "layerId": 4,
+    "layer": {
+      "id": 4,
+      "name": "Mundo"
+    }
+  }
 ]

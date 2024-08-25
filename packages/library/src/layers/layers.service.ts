@@ -24,7 +24,7 @@ export class LayersService {
   }
 
   findAll() {
-    return this.prismaClient.layers.findMany();
+    return this.prismaClient.layers.findMany({ include: { concepts: true } });
   }
 
   findOne(id: number) {
