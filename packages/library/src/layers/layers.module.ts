@@ -4,4 +4,4 @@ import { LayersService } from './layers.service';
 @Module({
   providers: [LayersService],
 })
-export class LayersModule {}
+export class LayersLibraryModule {}

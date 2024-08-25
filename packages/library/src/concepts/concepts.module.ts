@@ -4,4 +4,4 @@ import { ConceptsService } from './concepts.service';
 @Module({
   providers: [ConceptsService],
 })
-export class ConceptsModule {}
+export class ConceptsLibraryModule {}
