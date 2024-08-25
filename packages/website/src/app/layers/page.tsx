@@ -10,7 +10,7 @@ export default async function Page() {
         {layers.map(({ id, name, concepts }) => (
           <div key={id}>
             <h2 className="text-3xl text-center mb-4">{name}</h2>
-            <div className="flex flex-wrap break-words">
+            <div className="flex flex-wrap break-all">
               {concepts?.map((concept) => {
                 return <Idea key={concept.id} concept={concept} />;
               })}
