@@ -23,85 +23,33 @@ import * as React from 'react';
 
 const menuItems = [
   {
-    title: 'Products',
-    items: [
-      {
-        name: 'Analytics',
-        description: 'Measure and optimize your product performance',
-      },
-      {
-        name: 'Engagement',
-        description: 'Drive user interaction and retention',
-      },
-      { name: 'Security', description: 'Protect your data and your customers' },
-      {
-        name: 'Integrations',
-        description: 'Connect with your favorite tools and services',
-      },
-    ],
+    title: 'Conceitos',
+    href: '/',
   },
   {
-    title: 'Solutions',
+    title: 'Camadas',
+    href: '/layers',
     items: [
       {
-        name: 'For Startups',
-        description: 'Scale your business with our startup-friendly tools',
+        name: 'Universal',
+        description: 'Universal things',
+        href: '/layers',
       },
       {
-        name: 'For Enterprise',
-        description: 'Enterprise-grade solutions for large organizations',
+        name: 'Base',
+        description: 'Base things',
+        href: '/layers',
       },
       {
-        name: 'For E-commerce',
-        description: "Boost your online store's performance",
+        name: 'Now',
+        description: 'Now things',
+        href: '/layers',
       },
       {
-        name: 'For Healthcare',
-        description: 'Compliant solutions for healthcare providers',
+        name: 'World',
+        description: 'World things',
+        href: '/layers',
       },
-    ],
-  },
-  {
-    title: 'Resources',
-    items: [
-      {
-        name: 'Documentation',
-        description: 'Comprehensive guides and API references',
-      },
-      { name: 'Blog', description: 'Latest news, tips, and best practices' },
-      {
-        name: 'Case Studies',
-        description: 'See how others succeed with our solutions',
-      },
-      {
-        name: 'Webinars',
-        description: 'Learn from experts in live and recorded sessions',
-      },
-      {
-        name: 'Webinars 1',
-        description: 'Learn from experts in live and recorded sessions',
-      },
-      {
-        name: 'Webinars 2',
-        description: 'Learn from experts in live and recorded sessions',
-      },
-      {
-        name: 'Webinars 3',
-        description: 'Learn from experts in live and recorded sessions',
-      },
-      {
-        name: 'Webinars 4',
-        description: 'Learn from experts in live and recorded sessions',
-      },
-    ],
-  },
-  {
-    title: 'Company',
-    items: [
-      { name: 'About Us', description: 'Learn about our mission and values' },
-      { name: 'Careers', description: 'Join our team and make an impact' },
-      { name: 'Press', description: 'Latest news and media resources' },
-      { name: 'Contact', description: 'Get in touch with our support team' },
     ],
   },
 ];
@@ -121,18 +69,24 @@ export default function Component() {
             <NavigationMenuList>
               {menuItems.map((menu) => (
                 <NavigationMenuItem key={menu.title}>
-                  <NavigationMenuTrigger>
-                    <Link href="/level-one">{menu.title}</Link>
+                  <NavigationMenuTrigger hasChildrens={!!menu.items}>
+                    <Link href={menu.href}>{menu.title}</Link>
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                      {menu.items.map((item) => (
-                        <ListItem key={item.name} title={item.name}>
-                          {item.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
+                  {menu.items && (
+                    <NavigationMenuContent>
+                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                        {menu.items.map((item) => (
+                          <ListItem
+                            key={item.name}
+                            title={item.name}
+                            href={item.href}
+                          >
+                            {item.description}
+                          </ListItem>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  )}
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
@@ -168,11 +122,13 @@ export default function Component() {
                     key={item.title}
                     className="flex flex-col space-y-3 pt-6"
                   >
-                    <h4 className="font-medium">{item.title}</h4>
-                    {item.items.map((subItem) => (
+                    <Link href={item.href}>
+                      <h4 className="font-medium">{item.title}</h4>
+                    </Link>
+                    {item.items?.map((subItem) => (
                       <MobileLink
                         key={subItem.name}
-                        href="#"
+                        href={subItem.href}
                         onOpenChange={setIsOpen}
                       >
                         {subItem.name}
@@ -197,12 +153,13 @@ export default function Component() {
 const ListItem = React.forwardRef<
   React.ElementRef<'a'>,
   React.ComponentPropsWithoutRef<'a'>
->(({ title, children }) => {
+>(({ title, children, href }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
-          href="level-two"
+          href={href!}
+          ref={ref}
           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
         >
           <div className="text-sm font-medium leading-none">{title}</div>
