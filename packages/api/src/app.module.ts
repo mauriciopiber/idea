@@ -2,10 +2,10 @@ import { PrismaModule } from '@ideas/library';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { IdeasModule } from './ideas/ideas.module';
+import { ConceptsModule } from './concepts/concepts.module';
 
 @Module({
-  imports: [PrismaModule, IdeasModule],
+  imports: [PrismaModule, ConceptsModule],
   controllers: [AppController],
   providers: [AppService],
 })

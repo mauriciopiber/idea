@@ -8,7 +8,7 @@ describe('Idea component', () => {
     const ideaText = 'This is a test idea';
 
     // Render the Idea component with props
-    render(<Idea idea={ideaText} />);
+    render(<Idea concept={{ id: 1, idea: ideaText }} />);
 
     // Check if the text is rendered correctly
     const paragraphElement = screen.getByText(ideaText);
@@ -19,7 +19,7 @@ describe('Idea component', () => {
     const ideaText = 'Check class name';
 
     // Render the Idea component with props
-    render(<Idea idea={ideaText} />);
+    render(<Idea concept={{ id: 1, idea: ideaText }} />);
 
     // Check if the paragraph element has the correct class names
     const paragraphElement = screen.getByText(ideaText);

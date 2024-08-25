@@ -1,5 +1,8 @@
 import { Injectable } from '@nestjs/common';
+import { PrismaPromise } from '@prisma/client';
 import { PrismaService } from '../prisma';
+
+import { Concept } from '../types';
 import { CreateConceptDto } from './dto/create-concept.dto';
 import { UpdateConceptDto } from './dto/update-concept.dto';
 
@@ -23,7 +26,7 @@ export class ConceptsService {
     });
   }
 
-  findAll() {
+  findAll(): PrismaPromise<Concept[]> {
     return this.prismaClient.concepts.findMany({ include: { layer: true } });
   }
 

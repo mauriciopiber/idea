@@ -10,13 +10,13 @@ datasource db {
 model concepts {
   id         Int      @id @default(autoincrement())
   createdAt  DateTime @default(now()) @db.Timestamptz(6)
-  idea       String?  @db.VarChar(255) @unique
+  idea       String   @db.VarChar(255) @unique
   layerId    Int?     @db.Integer
-  layer      layers?   @relation(fields: [layerId], references: [id])
+  layer      layers?  @relation(fields: [layerId], references: [id])
 }
 
 model layers {
-  id       Int       @id @default(autoincrement())
-  name     String?   @db.VarChar(255) @unique
+  id       Int        @id @default(autoincrement())
+  name     String     @db.VarChar(255) @unique
   concepts concepts[]
 }
